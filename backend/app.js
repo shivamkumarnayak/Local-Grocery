@@ -7,7 +7,7 @@ const path = require("path");
 
 const errorMiddleware = require("./middleware/error");
 
-// Config
+// Config :-- If it is not in production mode then we use this config file. 
 if (process.env.NODE_ENV !== "PRODUCTION") {
   require("dotenv").config({ path: "backend/config/config.env" });
 }
@@ -31,6 +31,7 @@ app.use("/api/v1", payment);
 
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 
+// For any URL run only one below server pass only index.html file. 
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
 });
