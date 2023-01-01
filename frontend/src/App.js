@@ -53,16 +53,16 @@ function App() {
 
     setStripeApiKey(data.stripeApiKey);
   }
-
+ 
   useEffect(() => {
-    WebFont.load({
+    WebFont.load({ 
       google: {
         families: ["Roboto", "Droid Sans", "Chilanka"],
       },
-    });
+    }); 
 
-    store.dispatch(loadUser()); 
-
+    store.dispatch(loadUser());  
+   
     getStripeApiKey();
   }, []);
 

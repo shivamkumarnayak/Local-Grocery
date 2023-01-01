@@ -10,12 +10,11 @@ const Footer = () => {
         <p>Mullana, Ambala, Haryana</p> 
         <p>Pin Code:- 133207</p>   
       </div>
-
       <div className="midFooter">
         <h1>Local Grocery</h1>
         <p>High Quality is our first priority</p>
 
-        <p>Copyrights 2021 &copy; Local Grocery</p>
+        <p>Copyrights 2022 &copy; Local Grocery</p>
       </div>
 
       <div className="rightFooter">
